@@ -13,63 +13,130 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/queries.css">
+		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body>
-		<header>
-			<div id="bggreen"> 
-				<div class="container container-fluid">
-				
-					<div class="row"  id="barra1">
-						<div class="col-xs-12 col-sm-4 borderr" >
-							<div class="row">
-								<div class="col-xs-6 col-md-6">
-									<img src="image/gian.jpg"  class="img-responsive img-circle">		
-								</div>
-								<div class="col-xs-6 col-md-6">
-									<i class="icon-dots-three-vertical flr"></i>
-									<i class="icon-message flr"></i>
-								</div>
-							</div>				
-						</div>
+		
+			<div class="container">
+				<div class="row"  id="barra1">
+					<div class="col-xs-12 col-sm-4 borderr" >
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<img src="image/gian.jpg"  class="img-responsive img-circle">		
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<i class="icon-dots-three-vertical flr"></i>
+								<i class="icon-message flr"></i>
+							</div>
+						</div>				
+					</div>
 
-						<div class="hidden-xs col-sm-8">
-							<div class="row">
-								<div class="col-sm-1">
-									<img src="image/logocodeacademy.png" class="img-responsive img-circle">
-								</div>
-								<div class=" col-sm-9">
-									<p class="text-left"> <strong> Laboratoria Perú </strong> 
-									<br> Ana María, Aldo, Gian, Mariana Papu, Tú </p>
-								</div>
-								<div class=" col-sm-2">
-									<i class="icon-dots-three-vertical flr"></i>
-									<i class="icon-attachment flr"></i>
-								</div>
+					<div class="hidden-xs col-sm-8">
+						<div class="row">
+							<div class="col-sm-1">
+								<img src="image/logocodeacademy.png" class="img-responsive img-circle">
+							</div>
+							<div class=" col-sm-9">
+								<p class="text-left"> <strong> Laboratoria Perú </strong> 
+								<br> Ana María, Aldo, Gian, Mariana Papu, Tú </p>
+							</div>
+							<div class=" col-sm-2">
+								<i class="icon-dots-three-vertical flr"></i>
+								<i class="icon-attachment flr"></i>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
+		
 
-		<section>
-			<div class="container container-fluid">
-				
-					<div class="row">
-						<div class="col-xs-12 col-sm-4" >
+		<div id="chat">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 chatnombre">
+						<form>
+							Buscar en el chat <input id="searchTerm" type="text" onkeyup="doSearch()" />
+						</form>
+
+						<table id="datos">
+			<tr>
+				<th>Chat</th>
+			</tr>
+			<tr>
+				<td>Laboratoria Perú</td>
+			</tr>
+			<tr>
+				<td> Raydi Saldomando</td>
+			</tr>
+			<tr>
+				<td>Mariana Costa</td>
+			</tr>
+			<tr>
+				<td>Ana María Martínez Franklin</td>
+			</tr>
+			<tr>
+				<td>Rodulfo Prieto</td>
+			</tr>
+			<tr>
+				<td>Andrea Lamas </td>
+			</tr>
+			<tr>
+				<td>María Paula Rivarola</td>
+			</tr>
+			<tr>
+				<td>Katy Sánchez</td>
+			</tr>
+			<tr>
+				<td>Aldo Álfaro</td>
+			</tr>
+		</table>
+					</div>
+
+					<div class="col-xs-12 col-sm-8 chat1">
+						<div class="bgchat">
+							<h2 style="font-size:3em;">No terminé el whatsapp en la unidad pasada :( </h2>
 						</div>
+					</div>
+				</div>		
+		</div>
 
-						<div class="hidden-xs col-sm-8" id="bggray">
-							<div  id="conv">
-							<div class="row" >
-								
-							</div>
-							</div>
 
-						</div>
 
-					</div>			
-		</section>
-
+		<script type="text/javascript" src="main.js"></script>
+		<script language="javascript">
+		function doSearch()
+		{
+			var tableReg = document.getElementById('datos');
+			var searchText = document.getElementById('searchTerm').value.toLowerCase();
+			var cellsOfRow="";
+			var found=false;
+			var compareWith="";
+ 
+			// Recorremos todas las filas con contenido de la tabla
+			for (var i = 1; i < tableReg.rows.length; i++)
+			{
+				cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
+				found = false;
+				// Recorremos todas las celdas
+				for (var j = 0; j < cellsOfRow.length && !found; j++)
+				{
+					compareWith = cellsOfRow[j].innerHTML.toLowerCase();
+					// Buscamos el texto en el contenido de la celda
+					if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
+					{
+						found = true;
+					}
+				}
+				if(found)
+				{
+					tableReg.rows[i].style.display = '';
+				} else {
+					// si no ha encontrado ninguna coincidencia, esconde la
+					// fila de la tabla
+					tableReg.rows[i].style.display = 'none';
+				}
+			}
+		}
+	</script>
 	</body>
 </html>
