@@ -13,88 +13,238 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 		<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/queries.css">
-		<link rel="stylesheet" type="text/css" href="">
 	</head>
 	<body>
-		
-			<div class="container">
-				<div class="row"  id="barra1">
-					<div class="col-xs-12 col-sm-4 borderr" >
-						<div class="row">
-							<div class="col-xs-6 col-md-6">
-								<img src="image/gian.jpg"  class="img-responsive img-circle">		
-							</div>
-							<div class="col-xs-6 col-md-6">
-								<i class="icon-dots-three-vertical flr"></i>
-								<i class="icon-message flr"></i>
-							</div>
-						</div>				
-					</div>
-
-					<div class="hidden-xs col-sm-8">
-						<div class="row">
-							<div class="col-sm-1">
-								<img src="image/logocodeacademy.png" class="img-responsive img-circle">
-							</div>
-							<div class=" col-sm-9">
-								<p class="text-left"> <strong> Laboratoria Perú </strong> 
-								<br> Ana María, Aldo, Gian, Mariana Papu, Tú </p>
-							</div>
-							<div class=" col-sm-2">
-								<i class="icon-dots-three-vertical flr"></i>
-								<i class="icon-attachment flr"></i>
-							</div>
+		<!--Barra con nombres-->
+		<!--Foto de perfil-->
+		<div class="container container-fluid">
+			<div class="row"  id="barra1">
+				<div class="col-xs-12 col-sm-4 borderr" >
+					<div class="row">
+						<div class="col-xs-6 col-md-6">
+							<img src="image/gian.jpg"  class="img-responsive img-circle">		
+						</div>
+						<div class="col-xs-6 col-md-6">
+							<i class="icon-dots-three-vertical flr"></i>
+							<i class="icon-message flr"></i>
+						</div>
+					</div>				
+				</div>
+			
+			<!--Perfil del chat-->
+				<div class="hidden-xs col-sm-8">
+					<div class="row">
+						<div class="col-sm-1">
+							<img src="image/logocodeacademy.png" class="img-responsive img-circle">
+						</div>
+						<div class=" col-sm-9">
+							<p class="text-left"> <strong> Laboratoria Perú </strong> 
+							<br> Ana María, Aldo, Gian, Mariana Papu, Tú </p>
+						</div>
+						<div class=" col-sm-2">
+							<i class="icon-dots-three-vertical flr"></i>
+							<i class="icon-attachment flr"></i>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		
 
 		<div id="chat">
-			<div class="container">
+			<div class="container container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-sm-4 chatnombre">
 						<form>
-							Buscar en el chat <input id="searchTerm" type="text" onkeyup="doSearch()" />
+
+							<input id="searchTerm" onkeyup="doSearch()" type="text" class="form-control" placeholder="Buscar o empezar chat nuevo">
+							
 						</form>
 
+					<!--CHATS-->
+					<div class="scroll">
 						<table id="datos">
-			<tr>
-				<th>Chat</th>
-			</tr>
-			<tr>
-				<td>Laboratoria Perú</td>
-			</tr>
-			<tr>
-				<td> Raydi Saldomando</td>
-			</tr>
-			<tr>
-				<td>Mariana Costa</td>
-			</tr>
-			<tr>
-				<td>Ana María Martínez Franklin</td>
-			</tr>
-			<tr>
-				<td>Rodulfo Prieto</td>
-			</tr>
-			<tr>
-				<td>Andrea Lamas </td>
-			</tr>
-			<tr>
-				<td>María Paula Rivarola</td>
-			</tr>
-			<tr>
-				<td>Katy Sánchez</td>
-			</tr>
-			<tr>
-				<td>Aldo Álfaro</td>
-			</tr>
-		</table>
+							<tr>
+								<th></th>
+							</tr>
+						<!--Chat laboratoria-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/logocodeacademy.png" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Laboratoria Perú </strong> 
+												<br> Aldo: dale dale! </p>
+											</div>
+											<div class=" col-sm-1">
+												<p class="text-right hr">14:25</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Raydi-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/raymi.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Raymi Saldomando </strong> 
+												<br> La clase va bien! </p>
+											</div>
+											<div class=" col-sm-1">
+												<p class="text-right hr">11:25</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Mariana-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/mariana.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Mariana Costa</strong> 
+												<br> El panel de speakers esta buanazo </p>
+											</div>
+											<div class=" col-sm-1">
+												<p class="text-right hr">09:25</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Ana María-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/anamaria.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Ana María Martínez Franklin</strong> 
+												<br> Pues dale chamo! </p>
+											</div>
+											<div class=" col-sm-1">
+												<p class="text-right hr">Ayer</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Rodulfo-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/rodulfo.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Rodulfo Prieto </strong> 
+												<br> Cómo van las chicas? </p>
+											</div>
+											<div class=" col-sm-1">
+												<p class="text-right hr">Ayer</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Andrea-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/andrea.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Andrea Lamas </strong> 
+												<br> Hoy me toca clase de canto yee! </p>
+											</div>
+											<div class=" col-sm-2">
+												<p class="text-right hr">Lunes</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat María Paula-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/mariapaula.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> María Paula Rivarola </strong> 
+												<br> Wuju! Esto me encanta! En verdad!</p>
+											</div>
+											<div class=" col-sm-2">
+												<p class=" hr">13/01</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Katy-->
+							<tr>
+								<td>
+									<a href="#">
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/katy.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Katy Sánchez </strong> 
+												<br> No te preocupes, tengo el salón bajo control </p>
+											</div>
+											<div class=" col-sm-2">
+												<p class="text-right hr">11/01</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						<!--Chat Aldo-->
+							<tr>
+								<td>
+									<a href="#">	
+										<div class="row">
+											<div class="col-sm-2">
+												<img src="image/aldo.jpg" class="img-circle">
+											</div>
+											<div class=" col-sm-8">
+												<p class="text-left"> <strong> Aldo Álfaro </strong> 
+												<br> Vamos a comer? </p>
+											</div>
+											<div class=" col-sm-2">
+												<p class="text-right hr">03/01</p>
+											</div>
+										</div>
+									</a>
+								</td>
+							</tr>
+						</table>
+						</div>
 					</div>
 
 					<div class="col-xs-12 col-sm-8 chat1">
 						<div class="bgchat">
-							<h2 style="font-size:3em;">No terminé el whatsapp en la unidad pasada :( </h2>
+							
 						</div>
 					</div>
 				</div>		
@@ -102,41 +252,7 @@
 
 
 
-		<script type="text/javascript" src="main.js"></script>
-		<script language="javascript">
-		function doSearch()
-		{
-			var tableReg = document.getElementById('datos');
-			var searchText = document.getElementById('searchTerm').value.toLowerCase();
-			var cellsOfRow="";
-			var found=false;
-			var compareWith="";
- 
-			// Recorremos todas las filas con contenido de la tabla
-			for (var i = 1; i < tableReg.rows.length; i++)
-			{
-				cellsOfRow = tableReg.rows[i].getElementsByTagName('td');
-				found = false;
-				// Recorremos todas las celdas
-				for (var j = 0; j < cellsOfRow.length && !found; j++)
-				{
-					compareWith = cellsOfRow[j].innerHTML.toLowerCase();
-					// Buscamos el texto en el contenido de la celda
-					if (searchText.length == 0 || (compareWith.indexOf(searchText) > -1))
-					{
-						found = true;
-					}
-				}
-				if(found)
-				{
-					tableReg.rows[i].style.display = '';
-				} else {
-					// si no ha encontrado ninguna coincidencia, esconde la
-					// fila de la tabla
-					tableReg.rows[i].style.display = 'none';
-				}
-			}
-		}
-	</script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
 	</body>
 </html>

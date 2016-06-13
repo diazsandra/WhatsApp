@@ -2,11 +2,12 @@ body {
 	background-image: url('../image/bgapp.jpg');
 	width: 100%;
 	font-family: 'Open Sans' !important;
-	color: #37474f !important;
+	color: black !important;
 }
 
+/*BARRA*/
 #barra1 {
-	background-color: #dfdfdf;
+	background-color: #E3E3E3;
 	padding-top: .5em;
 	margin-top: 3%;
 }
@@ -28,15 +29,15 @@ img {
 
 p {
 	font-size: .8em;
+	color: black;
 }
 
-#conv {
-	
-	background-repeat:repeat;
+
+
+/*CHAT*/
+form {
+	padding: 3%;
 	width: 100%;
-	height: 300px;
-	background-size: cover;
-	top: 100px;	
 }
 
 .chatnombre {
@@ -44,11 +45,52 @@ p {
 	width: 100%;
 }
 
-.chat1 {
-	background-color: #dfdfdf;
+#chat {
+	height: 500px;
 	width: 100%;
+}
+
+.chat1 {
+	background-color: #EDE9EC;
+	width: 100%;
+	height: 450px;
+	padding: 0px;
+}
+
+table {
+	width: 100%;
+}
+
+tr {
+	padding-top: 5% !important;
+	border-top: solid 1px #EDE9EC;
+}
+
+td {
+	padding-top: 3% !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+a :hover {
+	background-color: #EDE9EC;
+}
+
+
+.hr {
+	float: left;
 }
 
 .bgchat {
 	background-image: url('../image/chat-panel-bg.png');
+	background-repeat: repeat;
+	height: 450px;
+	width: 100%;
+}
+
+.scroll {
+	height: 450px;
+	overflow-y: scroll;
 }
