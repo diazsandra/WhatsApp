@@ -204,7 +204,7 @@
 							<tr>
 								<td>
 									<a href="#">
-										<div class="row">
+										<div class="row" id="conversacionOcho">
 											<div class="col-sm-2">
 												<img src="image/katy.jpg" class="img-circle">
 											</div>
@@ -242,22 +242,27 @@
 						</div>
 					</div>
 
-					<div class="col-xs-12 col-sm-8 chat1">
-						<div class="bgchat" id="mensajitos">
+					<div class="col-xs-12 col-sm-8 chat1 ">
+						<div class="scroll2">
+						<div class="bgchat" id="conversaciones">
 							<div class="row">
 								<ul>
 									<li> </li>
 								</ul>
 							</div>							
 						</div>
+						</div>
+					
 					
 					<!--Input para agregar chats-->
-						<div class="text-box" id="chat_div">
-                   				<input type="text" name="type" class="form-control" id="intro" placeholder="Escribir Mensaje"/>
-                   				<button id="send" class="btn btn-circle btn-default add" onclick="add()">Enviar</button>
+						<div class="text-box" id="conversacion">
+							<a href="#"> <i class="icon-insert_emoticon"></i></a> 
+                   			<input type="text" name="type" class="form-control entradaTexto" id="intro" placeholder="Escribir Mensaje"/>
+                   			<button id="send" class="btn btn-circle btn-default add" onclick="add()">Enviar</button>
+                   			<a href="#"><i class="icon-mic"></i></a>
                			</div>
-						
 					</div>
+					
 
 				</div>		
 		</div>

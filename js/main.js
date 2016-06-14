@@ -4,7 +4,7 @@ function add() {
    li.className = 'conver';
    var msn = document.getElementById('intro').value;
    li.innerHTML = msn + " " + '<span id="hr1">'+moment().format("HH:mm")+'</span>';
-   document.getElementById('mensajitos').appendChild(li);
+   document.getElementById('conversaciones').appendChild(li);
 }
 //*Limpiar el imput #intro cuando se envia el mensaje//
 $('#send').click(function(){
@@ -53,5 +53,14 @@ function doSearch(){
 		}
 	}
 }
+
+
+$(document).ready(function(){
+      $('#conversacionOcho').click(function(){
+      		$('#content').val('').empty();//#content donde van los mensajes
+      		$("#imgconv").attr("src","image/katy.jpg");// cambia imagen de perfil del chat
+      		$("#nomChat").text('Katy Sanchez');// cambia el nombre del chat
+      });
+});
 
 

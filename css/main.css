@@ -88,7 +88,12 @@ a :hover {
 	background-image: url('../image/chat-panel-bg.png');
 	background-repeat: repeat;
 	height: 450px;
-	width: 100%;
+	width: 98%;
+}
+
+.scroll2 {
+	overflow-y: scroll;
+	overflow-x: none; 
 }
 
 .scroll {
@@ -116,5 +121,23 @@ li {
 	width: 50%;
 	border-radius: 10px;
 	padding: 2%;
+}
+
+#conversacion {
+	margin-left: -15px;
+	width: 104%;
+	padding: 2% 1% 1% 3%;
+	background-color: #EDE9EC;
+}
+
+i {
+	display: inline-block !important;
+	font-size: 1.7em;
+	color: #B0AEAE !important;
+}
+
+.entradaTexto {
+	width: 80% !important;
+	display: inline-block !important;
 }
 
