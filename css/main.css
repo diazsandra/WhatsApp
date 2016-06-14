@@ -13,7 +13,7 @@ body {
 }
 
 img {
-	width: 2em;
+	width: 2.2em;
 }
 
 .flr {
@@ -43,6 +43,7 @@ form {
 .chatnombre {
 	background-color: #ffffff;
 	width: 100%;
+	overflow-y: scroll;
 }
 
 #chat {
@@ -91,6 +92,29 @@ a :hover {
 }
 
 .scroll {
-	height: 450px;
-	overflow-y: scroll;
+	height: 450px;	
 }
+
+#agregarConv {
+	height: 55px;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+/*Ventana de conversación*/
+li {
+	list-style: none;
+}
+
+#hr1 {
+	float: right;
+}
+
+.conver {
+	background-color: white;
+	margin: 5%;
+	width: 50%;
+	border-radius: 10px;
+	padding: 2%;
+}
+

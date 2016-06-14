@@ -156,7 +156,7 @@
 												<br> Cómo van las chicas? </p>
 											</div>
 											<div class=" col-sm-1">
-												<p class="text-right hr">Ayer</p>
+												<p class="text-right hr">Martes</p>
 											</div>
 										</div>
 									</a>
@@ -194,7 +194,7 @@
 												<br> Wuju! Esto me encanta! En verdad!</p>
 											</div>
 											<div class=" col-sm-2">
-												<p class=" hr">13/01</p>
+												<p class=" hr">13/01/16</p>
 											</div>
 										</div>
 									</a>
@@ -210,10 +210,10 @@
 											</div>
 											<div class=" col-sm-8">
 												<p class="text-left"> <strong> Katy Sánchez </strong> 
-												<br> No te preocupes, tengo el salón bajo control </p>
+												<br> Ntp, tengo el salón bajo control </p>
 											</div>
 											<div class=" col-sm-2">
-												<p class="text-right hr">11/01</p>
+												<p class="text-right hr">11/01/16</p>
 											</div>
 										</div>
 									</a>
@@ -232,7 +232,7 @@
 												<br> Vamos a comer? </p>
 											</div>
 											<div class=" col-sm-2">
-												<p class="text-right hr">03/01</p>
+												<p class="text-right hr">03/01/16</p>
 											</div>
 										</div>
 									</a>
@@ -243,16 +243,29 @@
 					</div>
 
 					<div class="col-xs-12 col-sm-8 chat1">
-						<div class="bgchat">
-							
+						<div class="bgchat" id="mensajitos">
+							<div class="row">
+								<ul>
+									<li> </li>
+								</ul>
+							</div>							
 						</div>
+					
+					<!--Input para agregar chats-->
+						<div class="text-box" id="chat_div">
+                   				<input type="text" name="type" class="form-control" id="intro" placeholder="Escribir Mensaje"/>
+                   				<button id="send" class="btn btn-circle btn-default add" onclick="add()">Enviar</button>
+               			</div>
+						
 					</div>
+
 				</div>		
 		</div>
 
 
 
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/moment.min.js"></script>
 		
 	</body>
 </html>
