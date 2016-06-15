@@ -53,5 +53,7 @@ function doSearch(){
 	}
 }
 
-
-
+//Eliminar chats
+$(".chats").click(function(){
+      $(".esconder").empty();
+    });
