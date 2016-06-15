@@ -111,10 +111,6 @@ li {
 	list-style: none;
 }
 
-#hr1 {
-	float: right;
-}
-
 .conver {
 	background-color: white;
 	margin: 5%;
@@ -122,6 +118,7 @@ li {
 	border-radius: 10px;
 	padding: 2%;
 }
+
 
 #conversacion {
 	margin-left: -15px;
@@ -137,7 +134,14 @@ i {
 }
 
 .entradaTexto {
-	width: 80% !important;
+	width: 70% !important;
 	display: inline-block !important;
 }
+
+#gian {
+	font-size: 15px;
+	color: #456B8C;
+	font-weight: bolder;
+}
+
 
